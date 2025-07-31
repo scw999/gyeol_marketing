@@ -35,6 +35,7 @@
             <h1 class="text-2xl font-bold text-pink-600">결하다 | 마케팅 전략</h1>
             <nav class="hidden md:flex space-x-6 text-gray-600 font-medium">
                 <a href="#overview" class="hover:text-pink-600 transition-colors">프로젝트 개요</a>
+                <a href="#positioning" class="hover:text-pink-600 transition-colors">시장 포지셔닝</a>
                 <a href="#objectives" class="hover:text-pink-600 transition-colors">마케팅 목표</a>
                 <a href="#target" class="hover:text-pink-600 transition-colors">핵심 타겟</a>
                 <a href="#message" class="hover:text-pink-600 transition-colors">핵심 메시지</a>
@@ -48,6 +49,7 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
             <a href="#overview" class="block py-2 hover:text-pink-600">프로젝트 개요</a>
+            <a href="#positioning" class="block py-2 hover:text-pink-600">시장 포지셔닝</a>
             <a href="#objectives" class="block py-2 hover:text-pink-600">마케팅 목표</a>
             <a href="#target" class="block py-2 hover:text-pink-600">핵심 타겟</a>
             <a href="#message" class="block py-2 hover:text-pink-600">핵심 메시지</a>
@@ -91,32 +93,74 @@
             </div>
         </section>
 
-        <!-- 2. 마케팅 목표 -->
+        <!-- 2. 시장 포지셔닝 -->
+        <section id="positioning" class="mb-20">
+            <h2 class="section-title">2. 시장 포지셔닝</h2>
+            <div class="card p-8">
+                <div class="relative h-80 md:h-96 w-full max-w-2xl mx-auto">
+                    <!-- Y-axis -->
+                    <div class="absolute top-0 left-8 h-full w-px bg-gray-300"></div>
+                    <span class="absolute -top-2 left-0 text-sm text-gray-600">높음</span>
+                    <span class="absolute -bottom-2 left-0 text-sm text-gray-600">낮음</span>
+                    <span class="absolute top-1/2 -left-12 transform -translate-y-1/2 -rotate-90 font-bold text-gray-700">신뢰도 & 진지함</span>
+
+                    <!-- X-axis -->
+                    <div class="absolute bottom-8 left-0 w-full h-px bg-gray-300"></div>
+                    <span class="absolute bottom-0 -left-2 text-sm text-gray-600">저비용</span>
+                    <span class="absolute bottom-0 -right-2 text-sm text-gray-600">고비용</span>
+                    <span class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 font-bold text-gray-700">비용</span>
+
+                    <!-- Competitors & Gyeolhada -->
+                    <!-- 데이팅 앱 -->
+                    <div class="absolute bottom-[15%] left-[10%] text-center cursor-pointer" title="일반 데이팅 앱: 낮은 비용, 낮은 신뢰도">
+                        <div class="w-4 h-4 bg-gray-400 rounded-full mx-auto"></div>
+                        <p class="mt-1 text-sm font-medium text-gray-500">일반 데이팅 앱</p>
+                    </div>
+
+                    <!-- 결혼정보회사 -->
+                    <div class="absolute top-[15%] right-[10%] text-center cursor-pointer" title="결혼정보회사: 높은 비용, 높은 신뢰도">
+                        <div class="w-4 h-4 bg-gray-400 rounded-full mx-auto"></div>
+                        <p class="mt-1 text-sm font-medium text-gray-500">결혼정보회사</p>
+                    </div>
+
+                    <!-- 결하다 -->
+                    <div class="absolute top-[15%] left-[20%] text-center transform scale-110 md:scale-125" title="결하다: 합리적 비용, 높은 신뢰도">
+                         <div class="w-5 h-5 bg-pink-500 rounded-full mx-auto shadow-lg ring-2 ring-pink-300 animate-pulse"></div>
+                        <p class="mt-2 text-base font-bold text-pink-600">결하다</p>
+                    </div>
+                </div>
+                <p class="text-center text-gray-600 mt-12 md:mt-8">
+                    '결하다'는 **합리적인 비용**을 유지하면서도, 기존 데이팅 앱이 제공하지 못했던 **높은 신뢰도와 진지한 만남**을 제공하는 독보적인 포지션을 목표로 합니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. 마케팅 목표 -->
         <section id="objectives" class="mb-20">
-            <h2 class="section-title">2. 마케팅 목표</h2>
+            <h2 class="section-title">3. 마케팅 목표</h2>
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="card p-8">
                     <h3 class="text-xl font-bold mb-4 text-pink-600">🚀 론칭 초기 목표 (3개월)</h3>
                     <ul class="space-y-3 list-inside">
-                        <li class="flex items-start"><i data-lucide="user-plus" class="w-5 h-5 mr-2 text-pink-500 mt-1"></i><span>사전 등록자 3,000명 확보 및 실가입 전환율 30% 달성</span></li>
-                        <li class="flex items-start"><i data-lucide="download" class="w-5 h-5 mr-2 text-pink-500 mt-1"></i><span>초기 다운로드 10,000건 돌파 및 브랜드 가치(신뢰) 안착</span></li>
-                        <li class="flex items-start"><i data-lucide="thumbs-up" class="w-5 h-5 mr-2 text-pink-500 mt-1"></i><span>`#결하다후기` 콘텐츠 100개 이상 생성</span></li>
+                        <li class="flex items-start"><i data-lucide="user-plus" class="w-5 h-5 mr-2 text-pink-500 mt-1 flex-shrink-0"></i><span>사전 등록자 3,000명 확보 및 실가입 전환율 30% 달성</span></li>
+                        <li class="flex items-start"><i data-lucide="download" class="w-5 h-5 mr-2 text-pink-500 mt-1 flex-shrink-0"></i><span>초기 다운로드 10,000건 돌파 및 브랜드 가치(신뢰) 안착</span></li>
+                        <li class="flex items-start"><i data-lucide="thumbs-up" class="w-5 h-5 mr-2 text-pink-500 mt-1 flex-shrink-0"></i><span>`#결하다후기` 콘텐츠 100개 이상 생성</span></li>
                     </ul>
                 </div>
                 <div class="card p-8">
                     <h3 class="text-xl font-bold mb-4 text-gray-800">🌱 장기 비즈니스 목표 (6개월)</h3>
                      <ul class="space-y-3 list-inside">
-                        <li class="flex items-start"><i data-lucide="credit-card" class="w-5 h-5 mr-2 text-gray-500 mt-1"></i><span>유료 기능 결제 1,000건 달성</span></li>
-                        <li class="flex items-start"><i data-lucide="heart-handshake" class="w-5 h-5 mr-2 text-gray-500 mt-1"></i><span>'매칭 성공 커플' 10쌍 배출 및 성공 스토리 확보</span></li>
-                        <li class="flex items-start"><i data-lucide="dollar-sign" class="w-5 h-5 mr-2 text-gray-500 mt-1"></i><span>고객 획득 비용(CAC) 업계 평균 대비 20% 절감</span></li>
+                        <li class="flex items-start"><i data-lucide="credit-card" class="w-5 h-5 mr-2 text-gray-500 mt-1 flex-shrink-0"></i><span>유료 기능 결제 1,000건 달성</span></li>
+                        <li class="flex items-start"><i data-lucide="heart-handshake" class="w-5 h-5 mr-2 text-gray-500 mt-1 flex-shrink-0"></i><span>'매칭 성공 커플' 10쌍 배출 및 성공 스토리 확보</span></li>
+                        <li class="flex items-start"><i data-lucide="dollar-sign" class="w-5 h-5 mr-2 text-gray-500 mt-1 flex-shrink-0"></i><span>고객 획득 비용(CAC) 업계 평균 대비 20% 절감</span></li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- 3. 핵심 타겟 고객 -->
+        <!-- 4. 핵심 타겟 고객 -->
         <section id="target" class="mb-20">
-            <h2 class="section-title">3. 핵심 타겟 고객</h2>
+            <h2 class="section-title">4. 핵심 타겟 고객</h2>
             <div class="bg-white rounded-xl shadow-lg p-8">
                 <div class="grid md:grid-cols-5 gap-8 items-center">
                     <div class="md:col-span-2 text-center">
@@ -145,9 +189,9 @@
             </div>
         </section>
 
-        <!-- 4. 핵심 메시지 -->
+        <!-- 5. 핵심 메시지 -->
         <section id="message" class="mb-20">
-            <h2 class="section-title">4. 핵심 메시지 및 슬로건</h2>
+            <h2 class="section-title">5. 핵심 메시지 및 슬로건</h2>
             <div class="grid lg:grid-cols-2 gap-8">
                 <blockquote class="bg-pink-50 border-l-4 border-pink-500 text-pink-800 p-6 rounded-r-lg">
                     <p class="text-xl font-semibold mb-2">"사진에 속고, 대화에 지쳤다면. 이제는 '결하다'"</p>
@@ -180,9 +224,9 @@
             </div>
         </section>
         
-        <!-- 5. 실행 로드맵 -->
+        <!-- 6. 실행 로드맵 -->
         <section id="roadmap" class="mb-20">
-            <h2 class="section-title">5. 단계별 실행 로드맵</h2>
+            <h2 class="section-title">6. 단계별 실행 로드맵</h2>
             <div class="space-y-8">
                 <!-- Phase 1 -->
                 <div class="card flex flex-col md:flex-row">
@@ -251,9 +295,9 @@
             </div>
         </section>
 
-        <!-- 6. 채널 전략 -->
+        <!-- 7. 채널 전략 -->
         <section id="channels" class="mb-20">
-            <h2 class="section-title">6. 채널별 실행 전략 및 KPI</h2>
+            <h2 class="section-title">7. 채널별 실행 전략 및 KPI</h2>
             <div class="bg-white rounded-xl shadow-lg overflow-x-auto">
                 <table class="w-full text-sm text-left">
                     <thead class="border-b">
