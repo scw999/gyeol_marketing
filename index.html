@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>결하다(Gyeolhada) 마케팅 전략 기획서</title>
+    <title>결하다(Gyeolhada) 마케팅 전략 기획서 v3.0</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -11,19 +11,23 @@
         body {
             font-family: 'Noto Sans KR', 'Inter', sans-serif;
         }
-        /* Smooth scrolling for anchor links */
         html {
             scroll-behavior: smooth;
         }
-        /* Custom styles for better readability and aesthetics */
         .section-title {
-            @apply text-3xl font-bold text-gray-800 mb-8 border-b-2 border-pink-500 pb-2;
+            @apply text-3xl font-bold text-gray-800 mb-2;
+        }
+        .section-subtitle {
+            @apply text-lg text-gray-500 mb-8;
         }
         .card {
             @apply bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105;
         }
         .table-header {
             @apply bg-gray-100 text-gray-700 font-bold;
+        }
+        .highlight {
+            background: linear-gradient(to top, #fbe2e8 50%, transparent 50%);
         }
     </style>
 </head>
@@ -32,13 +36,12 @@
     <!-- Header & Navigation -->
     <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-md">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-pink-600">결하다 | 마케팅 전략</h1>
+            <h1 class="text-2xl font-bold text-pink-600">결하다: 행복동행 (幸福同行)</h1>
             <nav class="hidden md:flex space-x-6 text-gray-600 font-medium">
                 <a href="#overview" class="hover:text-pink-600 transition-colors">프로젝트 개요</a>
                 <a href="#positioning" class="hover:text-pink-600 transition-colors">시장 포지셔닝</a>
-                <a href="#objectives" class="hover:text-pink-600 transition-colors">마케팅 목표</a>
-                <a href="#target" class="hover:text-pink-600 transition-colors">핵심 타겟</a>
                 <a href="#message" class="hover:text-pink-600 transition-colors">핵심 메시지</a>
+                <a href="#target" class="hover:text-pink-600 transition-colors">핵심 타겟</a>
                 <a href="#roadmap" class="hover:text-pink-600 transition-colors">실행 로드맵</a>
                 <a href="#channels" class="hover:text-pink-600 transition-colors">채널 전략</a>
             </nav>
@@ -50,9 +53,8 @@
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
             <a href="#overview" class="block py-2 hover:text-pink-600">프로젝트 개요</a>
             <a href="#positioning" class="block py-2 hover:text-pink-600">시장 포지셔닝</a>
-            <a href="#objectives" class="block py-2 hover:text-pink-600">마케팅 목표</a>
-            <a href="#target" class="block py-2 hover:text-pink-600">핵심 타겟</a>
             <a href="#message" class="block py-2 hover:text-pink-600">핵심 메시지</a>
+            <a href="#target" class="block py-2 hover:text-pink-600">핵심 타겟</a>
             <a href="#roadmap" class="block py-2 hover:text-pink-600">실행 로드맵</a>
             <a href="#channels" class="block py-2 hover:text-pink-600">채널 전략</a>
         </div>
@@ -63,20 +65,21 @@
         <!-- 1. 프로젝트 개요 -->
         <section id="overview" class="mb-20">
             <h2 class="section-title">1. 프로젝트 개요</h2>
+            <p class="section-subtitle">우리는 만남의 횟수가 아닌, 관계의 질을 설계합니다.</p>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="card p-6">
                     <div class="flex items-center mb-3">
                         <i data-lucide="gem" class="text-pink-500 mr-3"></i>
                         <h3 class="text-lg font-bold">핵심 컨셉</h3>
                     </div>
-                    <p>결정사의 신뢰도와 데이팅 앱의 편의성을 결합한 **데이터 기반 신뢰 매칭 서비스**</p>
+                    <p><span class="highlight">행복한 결혼생활을 위한 동반자</span>를 찾아주는 데이터 기반 인생 설계 서비스</p>
                 </div>
                 <div class="card p-6">
                     <div class="flex items-center mb-3">
                         <i data-lucide="target" class="text-pink-500 mr-3"></i>
                         <h3 class="text-lg font-bold">포지셔닝</h3>
                     </div>
-                    <p>기존 서비스의 단점을 보완하고 `신뢰`, `합리성`, `편리성`을 제공하는 새로운 대안</p>
+                    <p>단순 매칭을 넘어, 장기적인 관계의 질을 목표로 하는 <span class="highlight">관계 컨설팅 서비스</span></p>
                 </div>
                 <div class="card p-6 col-span-1 md:col-span-2 lg:col-span-2">
                      <div class="flex items-center mb-3">
@@ -84,10 +87,10 @@
                         <h3 class="text-lg font-bold">강조할 차별점</h3>
                     </div>
                     <div class="flex flex-wrap gap-2">
-                        <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">#무보정_실물인증</span>
-                        <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">#AI_가치관분석</span>
-                        <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">#합리적인_필요시과금</span>
-                        <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">#결정사대비_저비용</span>
+                        <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">#행복동행_설계</span>
+                        <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">#만남의_퀄리티</span>
+                        <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">#장기적_만족도</span>
+                        <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">#가치관_심층분석</span>
                     </div>
                 </div>
             </div>
@@ -96,13 +99,14 @@
         <!-- 2. 시장 포지셔닝 -->
         <section id="positioning" class="mb-20">
             <h2 class="section-title">2. 시장 포지셔닝</h2>
+            <p class="section-subtitle">기존 시장의 빈틈을 공략하는 독보적 가치 제안</p>
             <div class="card p-8">
                 <div class="relative h-80 md:h-96 w-full max-w-2xl mx-auto">
                     <!-- Y-axis -->
                     <div class="absolute top-0 left-8 h-full w-px bg-gray-300"></div>
                     <span class="absolute -top-2 left-0 text-sm text-gray-600">높음</span>
                     <span class="absolute -bottom-2 left-0 text-sm text-gray-600">낮음</span>
-                    <span class="absolute top-1/2 -left-12 transform -translate-y-1/2 -rotate-90 font-bold text-gray-700">신뢰도 & 진지함</span>
+                    <span class="absolute top-1/2 -left-12 transform -translate-y-1/2 -rotate-90 font-bold text-gray-700">관계의 깊이 & 장기적 가치</span>
 
                     <!-- X-axis -->
                     <div class="absolute bottom-8 left-0 w-full h-px bg-gray-300"></div>
@@ -111,95 +115,39 @@
                     <span class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 font-bold text-gray-700">비용</span>
 
                     <!-- Competitors & Gyeolhada -->
-                    <!-- 데이팅 앱 -->
-                    <div class="absolute bottom-[15%] left-[10%] text-center cursor-pointer" title="일반 데이팅 앱: 낮은 비용, 낮은 신뢰도">
+                    <div class="absolute bottom-[15%] left-[10%] text-center cursor-pointer" title="일반 데이팅 앱: 낮은 비용, 낮은 관계 가치">
                         <div class="w-4 h-4 bg-gray-400 rounded-full mx-auto"></div>
                         <p class="mt-1 text-sm font-medium text-gray-500">일반 데이팅 앱</p>
                     </div>
 
-                    <!-- 결혼정보회사 -->
-                    <div class="absolute top-[15%] right-[10%] text-center cursor-pointer" title="결혼정보회사: 높은 비용, 높은 신뢰도">
+                    <div class="absolute top-[15%] right-[10%] text-center cursor-pointer" title="결혼정보회사: 높은 비용, 높은 관계 가치">
                         <div class="w-4 h-4 bg-gray-400 rounded-full mx-auto"></div>
                         <p class="mt-1 text-sm font-medium text-gray-500">결혼정보회사</p>
                     </div>
 
-                    <!-- 결하다 -->
-                    <div class="absolute top-[15%] left-[20%] text-center transform scale-110 md:scale-125" title="결하다: 합리적 비용, 높은 신뢰도">
-                         <div class="w-5 h-5 bg-pink-500 rounded-full mx-auto shadow-lg ring-2 ring-pink-300 animate-pulse"></div>
+                    <div class="absolute top-[10%] left-[20%] text-center transform scale-110 md:scale-125" title="결하다: 합리적 비용, 최상의 관계 가치">
+                         <div class="w-6 h-6 bg-pink-500 rounded-full mx-auto shadow-lg ring-4 ring-pink-300 animate-pulse"></div>
                         <p class="mt-2 text-base font-bold text-pink-600">결하다</p>
                     </div>
                 </div>
                 <p class="text-center text-gray-600 mt-12 md:mt-8">
-                    '결하다'는 **합리적인 비용**을 유지하면서도, 기존 데이팅 앱이 제공하지 못했던 **높은 신뢰도와 진지한 만남**을 제공하는 독보적인 포지션을 목표로 합니다.
+                    '결하다'는 **합리적인 비용**으로, 기존 어떤 서비스도 제공하지 못했던 **궁극적인 '관계의 가치'와 '행복한 삶'**을 제공하는 새로운 카테고리를 창조합니다.
                 </p>
             </div>
         </section>
 
-        <!-- 3. 마케팅 목표 -->
-        <section id="objectives" class="mb-20">
-            <h2 class="section-title">3. 마케팅 목표</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="card p-8">
-                    <h3 class="text-xl font-bold mb-4 text-pink-600">🚀 론칭 초기 목표 (3개월)</h3>
-                    <ul class="space-y-3 list-inside">
-                        <li class="flex items-start"><i data-lucide="user-plus" class="w-5 h-5 mr-2 text-pink-500 mt-1 flex-shrink-0"></i><span>사전 등록자 3,000명 확보 및 실가입 전환율 30% 달성</span></li>
-                        <li class="flex items-start"><i data-lucide="download" class="w-5 h-5 mr-2 text-pink-500 mt-1 flex-shrink-0"></i><span>초기 다운로드 10,000건 돌파 및 브랜드 가치(신뢰) 안착</span></li>
-                        <li class="flex items-start"><i data-lucide="thumbs-up" class="w-5 h-5 mr-2 text-pink-500 mt-1 flex-shrink-0"></i><span>`#결하다후기` 콘텐츠 100개 이상 생성</span></li>
-                    </ul>
-                </div>
-                <div class="card p-8">
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">🌱 장기 비즈니스 목표 (6개월)</h3>
-                     <ul class="space-y-3 list-inside">
-                        <li class="flex items-start"><i data-lucide="credit-card" class="w-5 h-5 mr-2 text-gray-500 mt-1 flex-shrink-0"></i><span>유료 기능 결제 1,000건 달성</span></li>
-                        <li class="flex items-start"><i data-lucide="heart-handshake" class="w-5 h-5 mr-2 text-gray-500 mt-1 flex-shrink-0"></i><span>'매칭 성공 커플' 10쌍 배출 및 성공 스토리 확보</span></li>
-                        <li class="flex items-start"><i data-lucide="dollar-sign" class="w-5 h-5 mr-2 text-gray-500 mt-1 flex-shrink-0"></i><span>고객 획득 비용(CAC) 업계 평균 대비 20% 절감</span></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. 핵심 타겟 고객 -->
-        <section id="target" class="mb-20">
-            <h2 class="section-title">4. 핵심 타겟 고객</h2>
-            <div class="bg-white rounded-xl shadow-lg p-8">
-                <div class="grid md:grid-cols-5 gap-8 items-center">
-                    <div class="md:col-span-2 text-center">
-                        <i data-lucide="users" class="w-24 h-24 mx-auto text-pink-500 mb-4"></i>
-                        <h3 class="text-2xl font-bold">주요 타겟</h3>
-                        <p class="text-gray-500 mt-1">20대 후반 ~ 30대 직장인</p>
-                    </div>
-                    <div class="md:col-span-3">
-                        <p class="text-lg font-semibold mb-4 text-pink-600">"데이팅 앱 피로 증후군을 겪는 사람들"</p>
-                        <div class="space-y-4">
-                            <div>
-                                <h4 class="font-bold text-gray-800">겪는 문제 (Pain Point)</h4>
-                                <p>가벼운 만남, 프로필 불신, 의미 없는 대화에 지쳐 있으며 자신의 시간과 감정을 소중히 여깁니다.</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-800">원하는 것 (Needs)</h4>
-                                <p>검증되고 진지한 만남을 원하지만, 결혼정보회사의 높은 비용과 복잡한 절차에는 부담을 느낍니다.</p>
-                            </div>
-                             <div>
-                                <h4 class="font-bold text-gray-800">초기 그룹 전략</h4>
-                                <p>신뢰도 높은 특정 직장인 커뮤니티(블라인드 등) 또는 전문직 그룹에 집중하여 초기 입소문을 유도합니다.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 5. 핵심 메시지 -->
+        <!-- 3. 핵심 메시지 및 슬로건 -->
         <section id="message" class="mb-20">
-            <h2 class="section-title">5. 핵심 메시지 및 슬로건</h2>
+            <h2 class="section-title">3. 핵심 메시지 및 슬로건</h2>
+            <p class="section-subtitle">우리의 철학을 담아 고객의 마음을 움직이는 한마디</p>
             <div class="grid lg:grid-cols-2 gap-8">
-                <blockquote class="bg-pink-50 border-l-4 border-pink-500 text-pink-800 p-6 rounded-r-lg">
-                    <p class="text-xl font-semibold mb-2">"사진에 속고, 대화에 지쳤다면. 이제는 '결하다'"</p>
-                    <footer class="text-sm">데이팅 앱 경험자 타겟</footer>
+                <blockquote class="bg-pink-50 border-l-4 border-pink-500 text-pink-800 p-6 rounded-r-lg shadow-sm">
+                    <p class="text-xl font-semibold mb-2">"매칭이 목표라면, 저희와 맞지 않습니다."</p>
+                    <footer class="text-sm">우리의 자신감과 차별점을 명확히 전달</footer>
                 </blockquote>
-                <blockquote class="bg-gray-100 border-l-4 border-gray-500 text-gray-800 p-6 rounded-r-lg">
-                    <p class="text-xl font-semibold mb-2">"결정사의 5% 비용으로, 데이터가 증명하는 사람을 만나세요."</p>
-                    <footer class="text-sm">결정사 잠재고객 타겟</footer>
+                <blockquote class="bg-gray-100 border-l-4 border-gray-500 text-gray-800 p-6 rounded-r-lg shadow-sm">
+                    <p class="text-xl font-semibold mb-2">"결혼, 그 다음의 행복을 설계합니다."</p>
+                    <footer class="text-sm">단기적 만남을 넘어 장기적 가치를 약속</footer>
                 </blockquote>
             </div>
             <div class="mt-8 card p-8">
@@ -208,25 +156,54 @@
                     <div>
                         <div class="bg-red-100 text-red-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3"><i data-lucide="frown"></i></div>
                         <h4 class="font-bold">공감 (Problem)</h4>
-                        <p class="text-sm">"우리가 데이팅 앱에서<br>진짜 사랑을 찾기 힘든 이유"</p>
+                        <p class="text-sm">"왜 수많은 만남이 결혼 후<br>불행으로 이어질까요?"</p>
                     </div>
                     <div>
                         <div class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3"><i data-lucide="lightbulb"></i></div>
                         <h4 class="font-bold">대안 제시 (Solution)</h4>
-                        <p class="text-sm">"결혼정보회사, 꼭 수백만 원<br>내야 할까? '결하다'의 대안"</p>
+                        <p class="text-sm">'결하다'는 만남 횟수가 아닌,<br>당신의 '행복한 결혼생활'을 목표합니다.</p>
                     </div>
                      <div>
                         <div class="bg-green-100 text-green-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3"><i data-lucide="shield-check"></i></div>
                         <h4 class="font-bold">신뢰 구축 (Reason to Believe)</h4>
-                        <p class="text-sm">"AI는 당신의 '결'을<br>어떻게 찾아낼까요?"</p>
+                        <p class="text-sm">가치관 심층 분석과 데이터로<br>당신의 인생 동반자를 찾습니다.</p>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <!-- 6. 실행 로드맵 -->
+
+        <!-- 4. 핵심 타겟 고객 -->
+        <section id="target" class="mb-20">
+            <h2 class="section-title">4. 핵심 타겟 고객</h2>
+            <p class="section-subtitle">우리의 가치를 알아보고 깊이 공감할 사람들</p>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="grid md:grid-cols-5 gap-8 items-center">
+                    <div class="md:col-span-2 text-center">
+                        <i data-lucide="users" class="w-24 h-24 mx-auto text-pink-500 mb-4"></i>
+                        <h3 class="text-2xl font-bold">주요 타겟</h3>
+                        <p class="text-gray-500 mt-1">20대 후반 ~ 30대 직장인</p>
+                    </div>
+                    <div class="md:col-span-3">
+                        <p class="text-lg font-semibold mb-4 text-pink-600">"내 인생의 동반자를 신중하게 찾고 싶은 사람"</p>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-bold text-gray-800">겪는 문제 (Pain Point)</h4>
+                                <p>가벼운 만남, 프로필 불신, 의미 없는 대화에 지쳐 있으며, 결혼 자체보다 '누구와 함께하느냐'를 더 중요하게 생각합니다.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">원하는 것 (Needs)</h4>
+                                <p>나의 가치관과 삶의 방향을 이해하고, 함께 성장하며 시너지를 낼 수 있는 진정한 파트너를 만나고 싶어 합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. 실행 로드맵 -->
         <section id="roadmap" class="mb-20">
-            <h2 class="section-title">6. 단계별 실행 로드맵</h2>
+            <h2 class="section-title">5. 단계별 실행 로드맵</h2>
+             <p class="section-subtitle">우리의 철학을 시장에 알리기 위한 체계적인 계획</p>
             <div class="space-y-8">
                 <!-- Phase 1 -->
                 <div class="card flex flex-col md:flex-row">
@@ -236,11 +213,11 @@
                         <p class="text-sm opacity-75 mt-1">D-60 ~ D-15</p>
                     </div>
                     <div class="p-6 md:w-3/4">
-                        <h4 class="font-bold text-lg mb-2">목표: 서비스 가치 검증 및 신뢰 기반 구축</h4>
+                        <h4 class="font-bold text-lg mb-2">목표: '행복한 결혼'이라는 핵심 가치 검증</h4>
                         <ul class="list-decimal list-inside space-y-1">
-                            <li>'블라인드' 지인 테스트로 UX 및 차별점 인지 여부 확인</li>
-                            <li>테스트 피드백 기반 앱 재정비 및 리브랜딩</li>
-                            <li>경쟁사 광고/후기 분석 후 마케팅 키워드 추출</li>
+                            <li>심층 인터뷰: "어떤 사람과 결혼하면 행복할까요?" 등 질문으로 가치 검증</li>
+                            <li>앱 재설계: 테스트 피드백 기반으로 '관계 컨설팅' 컨셉 강화</li>
+                            <li>경쟁사 분석: '만남 횟수'를 강조하는 경쟁사와의 차별점 부각 전략 수립</li>
                         </ul>
                     </div>
                 </div>
@@ -252,11 +229,11 @@
                         <p class="text-sm opacity-75 mt-1">D-15 ~ D-1</p>
                     </div>
                     <div class="p-6 md:w-3/4">
-                        <h4 class="font-bold text-lg mb-2">목표: 기대감 증폭 및 초기 핵심 유저 확보</h4>
+                        <h4 class="font-bold text-lg mb-2">목표: 우리의 철학에 공감하는 '첫번째 팬' 확보</h4>
                          <ul class="list-decimal list-inside space-y-1">
-                            <li>사전등록 페이지 오픈 및 광고 집행 (강력한 혜택 제시)</li>
-                            <li>타겟 커뮤니티(블라인드, 카페 등) 공략 및 베타테스터 모집</li>
-                            <li>연애/결혼 인플루언서 사전 컨택 및 후기 콘텐츠 협의</li>
+                            <li>사전등록 페이지: "당신의 행복한 결혼생활을 미리 설계해보세요" 메시지 전달</li>
+                            <li>타겟 커뮤니티 공략: '결혼관'에 대한 진지한 토론을 열고 서비스 소개</li>
+                            <li>인플루언서 협업: '만남 후기'가 아닌 '가치관 인터뷰' 형태의 콘텐츠 제작</li>
                         </ul>
                     </div>
                 </div>
@@ -268,36 +245,21 @@
                         <p class="text-sm opacity-75 mt-1">D-Day ~ D+30</p>
                     </div>
                     <div class="p-6 md:w-3/4">
-                        <h4 class="font-bold text-lg mb-2">목표: 초기 다운로드 극대화 및 '신뢰' 이미지 각인</h4>
+                        <h4 class="font-bold text-lg mb-2">목표: '새로운 카테고리'의 탄생을 시장에 각인</h4>
                          <ul class="list-decimal list-inside space-y-1">
-                            <li>타겟 문제점 저격 광고 동시 집행</li>
-                            <li>인플루언서/테스터 후기 동시 다발적 배포</li>
-                            <li>커뮤니티 바이럴을 통한 자연스러운 노출 (선택)</li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- Phase 4 -->
-                 <div class="card flex flex-col md:flex-row">
-                     <div class="bg-green-600 text-white p-6 rounded-t-xl md:rounded-l-xl md:rounded-t-none flex flex-col justify-center items-center md:w-1/4">
-                        <p class="text-sm font-bold opacity-75">Phase 4</p>
-                        <h3 class="text-2xl font-bold text-center">🌱 성장 및 활성화</h3>
-                        <p class="text-sm opacity-75 mt-1">D+31 ~</p>
-                    </div>
-                    <div class="p-6 md:w-3/4">
-                        <h4 class="font-bold text-lg mb-2">목표: 지속 가능한 성장 및 '성공 사례' 기반 선순환 구축</h4>
-                         <ul class="list-decimal list-inside space-y-1">
-                            <li>콘텐츠 마케팅 정기 발행 (블로그, 유튜브)</li>
-                            <li>`#결하다후기` UGC(사용자 제작 콘텐츠) 캠페인 진행</li>
-                            <li>실제 '성공 커플' 인터뷰 진행 및 2차 콘텐츠화</li>
+                            <li>광고 캠페인: "결혼, 그 다음을 생각합니다" 슬로건 전면 배치</li>
+                            <li>언론/미디어 배포: '포스트 결정사' 모델로 보도자료 배포</li>
+                            <li>커뮤니티 바이럴: '결정사 가봤는데~'가 아닌 '내 인생 파트너 찾는 법' 후기</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 7. 채널 전략 -->
+        <!-- 6. 채널 전략 -->
         <section id="channels" class="mb-20">
-            <h2 class="section-title">7. 채널별 실행 전략 및 KPI</h2>
+            <h2 class="section-title">6. 채널별 실행 전략 및 KPI</h2>
+            <p class="section-subtitle">각 채널의 특성에 맞춰 우리의 깊이 있는 메시지를 전달합니다.</p>
             <div class="bg-white rounded-xl shadow-lg overflow-x-auto">
                 <table class="w-full text-sm text-left">
                     <thead class="border-b">
@@ -311,33 +273,27 @@
                     <tbody>
                         <tr class="border-b hover:bg-gray-50">
                             <td class="p-4 font-bold text-pink-600">인스타그램</td>
-                            <td class="p-4">카드뉴스, 릴스 (후기, 꿀팁, 이벤트)</td>
-                            <td class="p-4">브랜드 인지도, 잠재고객 소통</td>
-                            <td class="p-4">팔로워 수, 참여율, `#결하다후기` 태그 수</td>
+                            <td class="p-4">"결혼은 현실이야" 시리즈, "행복한 부부의 10가지 특징" 카드뉴스</td>
+                            <td class="p-4">공감대 형성, 브랜드 철학 전파</td>
+                            <td class="p-4">팔로워 수, 저장/공유 수, 댓글 토론 활성도</td>
                         </tr>
                          <tr class="border-b hover:bg-gray-50">
                             <td class="p-4 font-bold text-pink-600">블로그/브런치</td>
-                            <td class="p-4">심층 정보글 (비교분석, 칼럼, 성공사례)</td>
-                            <td class="p-4">신뢰도 구축, 검색 유입</td>
-                            <td class="p-4">검색 노출 순위, 공유 수, 체류 시간</td>
+                            <td class="p-4">"삼중뇌 이론으로 본 완벽한 파트너", "결혼, 목적이 아닌 과정" 칼럼</td>
+                            <td class="p-4">전문성/신뢰도 구축, 검색 유입</td>
+                            <td class="p-4">검색 노출 순위, 완독률, 체류 시간</td>
                         </tr>
                          <tr class="border-b hover:bg-gray-50">
                             <td class="p-4 font-bold text-pink-600">유튜브/숏폼</td>
-                            <td class="p-4">인터뷰, VLOG, 정보 영상</td>
-                            <td class="p-4">서비스 이해도 증진, 매력도 어필</td>
-                            <td class="p-4">조회수, 구독자 수, 시청 지속 시간</td>
-                        </tr>
-                         <tr class="border-b hover:bg-gray-50">
-                            <td class="p-4 font-bold text-pink-600">유료 광고</td>
-                            <td class="p-4">페이스북, 인스타그램, 구글</td>
-                            <td class="p-4">신규 회원가입 (다운로드)</td>
-                            <td class="p-4">클릭률(CTR), 전환율(CVR), 고객 획득 비용(CAC)</td>
+                            <td class="p-4">전문가(심리학자, 부부상담가) 인터뷰, "결혼 선배에게 묻다" 시리즈</td>
+                            <td class="p-4">깊이 있는 정보 제공, 팬덤 형성</td>
+                            <td class="p-4">구독자 수, 시청 지속 시간, 댓글 반응</td>
                         </tr>
                          <tr class="hover:bg-gray-50">
-                            <td class="p-4 font-bold text-pink-600">커뮤니티</td>
-                            <td class="p-4">블라인드, 에브리타임, 카페 등</td>
-                            <td class="p-4">초기 사용자 확보, 바이럴</td>
-                            <td class="p-4">언급량(Buzz), 가입 추천 링크 클릭 수</td>
+                            <td class="p-4 font-bold text-pink-600">유료 광고</td>
+                            <td class="p-4">"결혼, 그 다음을 생각한다면?" 메시지 기반 광고</td>
+                            <td class="p-4">철학에 공감하는 '진성 유저' 확보</td>
+                            <td class="p-4">클릭률(CTR), **가입 후 활동성(Activation Rate)**</td>
                         </tr>
                     </tbody>
                 </table>
@@ -348,7 +304,7 @@
 
     <footer class="bg-gray-800 text-white text-center p-6">
         <p>&copy; 2025 결하다(Gyeolhada) Project. All rights reserved.</p>
-        <p class="text-sm text-gray-400 mt-1">본 문서는 마케팅 전략 기획을 위한 내부 자료입니다.</p>
+        <p class="text-sm text-gray-400 mt-1">본 문서는 '행복동행'을 위한 마케팅 전략 기획서입니다.</p>
     </footer>
 
     <script>
