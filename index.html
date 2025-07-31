@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결하다(Gyeolhada) 마케팅 전략 기획서</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', 'Inter', sans-serif;
+        }
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Custom styles for better readability and aesthetics */
+        .section-title {
+            @apply text-3xl font-bold text-gray-800 mb-8 border-b-2 border-pink-500 pb-2;
+        }
+        .card {
+            @apply bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105;
+        }
+        .table-header {
+            @apply bg-gray-100 text-gray-700 font-bold;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-pink-600">결하다 | 마케팅 전략</h1>
+            <nav class="hidden md:flex space-x-6 text-gray-600 font-medium">
+                <a href="#overview" class="hover:text-pink-600 transition-colors">프로젝트 개요</a>
+                <a href="#objectives" class="hover:text-pink-600 transition-colors">마케팅 목표</a>
+                <a href="#target" class="hover:text-pink-600 transition-colors">핵심 타겟</a>
+                <a href="#message" class="hover:text-pink-600 transition-colors">핵심 메시지</a>
+                <a href="#roadmap" class="hover:text-pink-600 transition-colors">실행 로드맵</a>
+                <a href="#channels" class="hover:text-pink-600 transition-colors">채널 전략</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#overview" class="block py-2 hover:text-pink-600">프로젝트 개요</a>
+            <a href="#objectives" class="block py-2 hover:text-pink-600">마케팅 목표</a>
+            <a href="#target" class="block py-2 hover:text-pink-600">핵심 타겟</a>
+            <a href="#message" class="block py-2 hover:text-pink-600">핵심 메시지</a>
+            <a href="#roadmap" class="block py-2 hover:text-pink-600">실행 로드맵</a>
+            <a href="#channels" class="block py-2 hover:text-pink-600">채널 전략</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- 1. 프로젝트 개요 -->
+        <section id="overview" class="mb-20">
+            <h2 class="section-title">1. 프로젝트 개요</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card p-6">
+                    <div class="flex items-center mb-3">
+                        <i data-lucide="gem" class="text-pink-500 mr-3"></i>
+                        <h3 class="text-lg font-bold">핵심 컨셉</h3>
+                    </div>
+                    <p>결정사의 신뢰도와 데이팅 앱의 편의성을 결합한 **데이터 기반 신뢰 매칭 서비스**</p>
+                </div>
+                <div class="card p-6">
+                    <div class="flex items-center mb-3">
+                        <i data-lucide="target" class="text-pink-500 mr-3"></i>
+                        <h3 class="text-lg font-bold">포지셔닝</h3>
+                    </div>
+                    <p>기존 서비스의 단점을 보완하고 `신뢰`, `합리성`, `편리성`을 제공하는 새로운 대안</p>
+                </div>
+                <div class="card p-6 col-span-1 md:col-span-2 lg:col-span-2">
+                     <div class="flex items-center mb-3">
+                        <i data-lucide="star" class="text-pink-500 mr-3"></i>
+                        <h3 class="text-lg font-bold">강조할 차별점</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">#무보정_실물인증</span>
+                        <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">#AI_가치관분석</span>
+                        <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">#합리적인_필요시과금</span>
+                        <span class="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium">#결정사대비_저비용</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 마케팅 목표 -->
+        <section id="objectives" class="mb-20">
+            <h2 class="section-title">2. 마케팅 목표</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="card p-8">
+                    <h3 class="text-xl font-bold mb-4 text-pink-600">🚀 론칭 초기 목표 (3개월)</h3>
+                    <ul class="space-y-3 list-inside">
+                        <li class="flex items-start"><i data-lucide="user-plus" class="w-5 h-5 mr-2 text-pink-500 mt-1"></i><span>사전 등록자 3,000명 확보 및 실가입 전환율 30% 달성</span></li>
+                        <li class="flex items-start"><i data-lucide="download" class="w-5 h-5 mr-2 text-pink-500 mt-1"></i><span>초기 다운로드 10,000건 돌파 및 브랜드 가치(신뢰) 안착</span></li>
+                        <li class="flex items-start"><i data-lucide="thumbs-up" class="w-5 h-5 mr-2 text-pink-500 mt-1"></i><span>`#결하다후기` 콘텐츠 100개 이상 생성</span></li>
+                    </ul>
+                </div>
+                <div class="card p-8">
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">🌱 장기 비즈니스 목표 (6개월)</h3>
+                     <ul class="space-y-3 list-inside">
+                        <li class="flex items-start"><i data-lucide="credit-card" class="w-5 h-5 mr-2 text-gray-500 mt-1"></i><span>유료 기능 결제 1,000건 달성</span></li>
+                        <li class="flex items-start"><i data-lucide="heart-handshake" class="w-5 h-5 mr-2 text-gray-500 mt-1"></i><span>'매칭 성공 커플' 10쌍 배출 및 성공 스토리 확보</span></li>
+                        <li class="flex items-start"><i data-lucide="dollar-sign" class="w-5 h-5 mr-2 text-gray-500 mt-1"></i><span>고객 획득 비용(CAC) 업계 평균 대비 20% 절감</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 핵심 타겟 고객 -->
+        <section id="target" class="mb-20">
+            <h2 class="section-title">3. 핵심 타겟 고객</h2>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="grid md:grid-cols-5 gap-8 items-center">
+                    <div class="md:col-span-2 text-center">
+                        <i data-lucide="users" class="w-24 h-24 mx-auto text-pink-500 mb-4"></i>
+                        <h3 class="text-2xl font-bold">주요 타겟</h3>
+                        <p class="text-gray-500 mt-1">20대 후반 ~ 30대 직장인</p>
+                    </div>
+                    <div class="md:col-span-3">
+                        <p class="text-lg font-semibold mb-4 text-pink-600">"데이팅 앱 피로 증후군을 겪는 사람들"</p>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="font-bold text-gray-800">겪는 문제 (Pain Point)</h4>
+                                <p>가벼운 만남, 프로필 불신, 의미 없는 대화에 지쳐 있으며 자신의 시간과 감정을 소중히 여깁니다.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">원하는 것 (Needs)</h4>
+                                <p>검증되고 진지한 만남을 원하지만, 결혼정보회사의 높은 비용과 복잡한 절차에는 부담을 느낍니다.</p>
+                            </div>
+                             <div>
+                                <h4 class="font-bold text-gray-800">초기 그룹 전략</h4>
+                                <p>신뢰도 높은 특정 직장인 커뮤니티(블라인드 등) 또는 전문직 그룹에 집중하여 초기 입소문을 유도합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 핵심 메시지 -->
+        <section id="message" class="mb-20">
+            <h2 class="section-title">4. 핵심 메시지 및 슬로건</h2>
+            <div class="grid lg:grid-cols-2 gap-8">
+                <blockquote class="bg-pink-50 border-l-4 border-pink-500 text-pink-800 p-6 rounded-r-lg">
+                    <p class="text-xl font-semibold mb-2">"사진에 속고, 대화에 지쳤다면. 이제는 '결하다'"</p>
+                    <footer class="text-sm">데이팅 앱 경험자 타겟</footer>
+                </blockquote>
+                <blockquote class="bg-gray-100 border-l-4 border-gray-500 text-gray-800 p-6 rounded-r-lg">
+                    <p class="text-xl font-semibold mb-2">"결정사의 5% 비용으로, 데이터가 증명하는 사람을 만나세요."</p>
+                    <footer class="text-sm">결정사 잠재고객 타겟</footer>
+                </blockquote>
+            </div>
+            <div class="mt-8 card p-8">
+                <h3 class="text-xl font-bold mb-4 text-center">스토리텔링 앵글</h3>
+                <div class="grid md:grid-cols-3 gap-6 text-center">
+                    <div>
+                        <div class="bg-red-100 text-red-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3"><i data-lucide="frown"></i></div>
+                        <h4 class="font-bold">공감 (Problem)</h4>
+                        <p class="text-sm">"우리가 데이팅 앱에서<br>진짜 사랑을 찾기 힘든 이유"</p>
+                    </div>
+                    <div>
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3"><i data-lucide="lightbulb"></i></div>
+                        <h4 class="font-bold">대안 제시 (Solution)</h4>
+                        <p class="text-sm">"결혼정보회사, 꼭 수백만 원<br>내야 할까? '결하다'의 대안"</p>
+                    </div>
+                     <div>
+                        <div class="bg-green-100 text-green-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-3"><i data-lucide="shield-check"></i></div>
+                        <h4 class="font-bold">신뢰 구축 (Reason to Believe)</h4>
+                        <p class="text-sm">"AI는 당신의 '결'을<br>어떻게 찾아낼까요?"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 5. 실행 로드맵 -->
+        <section id="roadmap" class="mb-20">
+            <h2 class="section-title">5. 단계별 실행 로드맵</h2>
+            <div class="space-y-8">
+                <!-- Phase 1 -->
+                <div class="card flex flex-col md:flex-row">
+                    <div class="bg-gray-700 text-white p-6 rounded-t-xl md:rounded-l-xl md:rounded-t-none flex flex-col justify-center items-center md:w-1/4">
+                        <p class="text-sm font-bold opacity-75">Phase 1</p>
+                        <h3 class="text-2xl font-bold text-center">🛡️ 준비 및 검증</h3>
+                        <p class="text-sm opacity-75 mt-1">D-60 ~ D-15</p>
+                    </div>
+                    <div class="p-6 md:w-3/4">
+                        <h4 class="font-bold text-lg mb-2">목표: 서비스 가치 검증 및 신뢰 기반 구축</h4>
+                        <ul class="list-decimal list-inside space-y-1">
+                            <li>'블라인드' 지인 테스트로 UX 및 차별점 인지 여부 확인</li>
+                            <li>테스트 피드백 기반 앱 재정비 및 리브랜딩</li>
+                            <li>경쟁사 광고/후기 분석 후 마케팅 키워드 추출</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Phase 2 -->
+                <div class="card flex flex-col md:flex-row">
+                    <div class="bg-pink-600 text-white p-6 rounded-t-xl md:rounded-l-xl md:rounded-t-none flex flex-col justify-center items-center md:w-1/4">
+                        <p class="text-sm font-bold opacity-75">Phase 2</p>
+                        <h3 class="text-2xl font-bold text-center">📣 사전 홍보</h3>
+                        <p class="text-sm opacity-75 mt-1">D-15 ~ D-1</p>
+                    </div>
+                    <div class="p-6 md:w-3/4">
+                        <h4 class="font-bold text-lg mb-2">목표: 기대감 증폭 및 초기 핵심 유저 확보</h4>
+                         <ul class="list-decimal list-inside space-y-1">
+                            <li>사전등록 페이지 오픈 및 광고 집행 (강력한 혜택 제시)</li>
+                            <li>타겟 커뮤니티(블라인드, 카페 등) 공략 및 베타테스터 모집</li>
+                            <li>연애/결혼 인플루언서 사전 컨택 및 후기 콘텐츠 협의</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Phase 3 -->
+                <div class="card flex flex-col md:flex-row">
+                     <div class="bg-blue-600 text-white p-6 rounded-t-xl md:rounded-l-xl md:rounded-t-none flex flex-col justify-center items-center md:w-1/4">
+                        <p class="text-sm font-bold opacity-75">Phase 3</p>
+                        <h3 class="text-2xl font-bold text-center">🚀 그랜드 론칭</h3>
+                        <p class="text-sm opacity-75 mt-1">D-Day ~ D+30</p>
+                    </div>
+                    <div class="p-6 md:w-3/4">
+                        <h4 class="font-bold text-lg mb-2">목표: 초기 다운로드 극대화 및 '신뢰' 이미지 각인</h4>
+                         <ul class="list-decimal list-inside space-y-1">
+                            <li>타겟 문제점 저격 광고 동시 집행</li>
+                            <li>인플루언서/테스터 후기 동시 다발적 배포</li>
+                            <li>커뮤니티 바이럴을 통한 자연스러운 노출 (선택)</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Phase 4 -->
+                 <div class="card flex flex-col md:flex-row">
+                     <div class="bg-green-600 text-white p-6 rounded-t-xl md:rounded-l-xl md:rounded-t-none flex flex-col justify-center items-center md:w-1/4">
+                        <p class="text-sm font-bold opacity-75">Phase 4</p>
+                        <h3 class="text-2xl font-bold text-center">🌱 성장 및 활성화</h3>
+                        <p class="text-sm opacity-75 mt-1">D+31 ~</p>
+                    </div>
+                    <div class="p-6 md:w-3/4">
+                        <h4 class="font-bold text-lg mb-2">목표: 지속 가능한 성장 및 '성공 사례' 기반 선순환 구축</h4>
+                         <ul class="list-decimal list-inside space-y-1">
+                            <li>콘텐츠 마케팅 정기 발행 (블로그, 유튜브)</li>
+                            <li>`#결하다후기` UGC(사용자 제작 콘텐츠) 캠페인 진행</li>
+                            <li>실제 '성공 커플' 인터뷰 진행 및 2차 콘텐츠화</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. 채널 전략 -->
+        <section id="channels" class="mb-20">
+            <h2 class="section-title">6. 채널별 실행 전략 및 KPI</h2>
+            <div class="bg-white rounded-xl shadow-lg overflow-x-auto">
+                <table class="w-full text-sm text-left">
+                    <thead class="border-b">
+                        <tr>
+                            <th class="p-4 table-header">채널</th>
+                            <th class="p-4 table-header">핵심 콘텐츠</th>
+                            <th class="p-4 table-header">주요 목표</th>
+                            <th class="p-4 table-header">핵심 성과 지표 (KPI)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b hover:bg-gray-50">
+                            <td class="p-4 font-bold text-pink-600">인스타그램</td>
+                            <td class="p-4">카드뉴스, 릴스 (후기, 꿀팁, 이벤트)</td>
+                            <td class="p-4">브랜드 인지도, 잠재고객 소통</td>
+                            <td class="p-4">팔로워 수, 참여율, `#결하다후기` 태그 수</td>
+                        </tr>
+                         <tr class="border-b hover:bg-gray-50">
+                            <td class="p-4 font-bold text-pink-600">블로그/브런치</td>
+                            <td class="p-4">심층 정보글 (비교분석, 칼럼, 성공사례)</td>
+                            <td class="p-4">신뢰도 구축, 검색 유입</td>
+                            <td class="p-4">검색 노출 순위, 공유 수, 체류 시간</td>
+                        </tr>
+                         <tr class="border-b hover:bg-gray-50">
+                            <td class="p-4 font-bold text-pink-600">유튜브/숏폼</td>
+                            <td class="p-4">인터뷰, VLOG, 정보 영상</td>
+                            <td class="p-4">서비스 이해도 증진, 매력도 어필</td>
+                            <td class="p-4">조회수, 구독자 수, 시청 지속 시간</td>
+                        </tr>
+                         <tr class="border-b hover:bg-gray-50">
+                            <td class="p-4 font-bold text-pink-600">유료 광고</td>
+                            <td class="p-4">페이스북, 인스타그램, 구글</td>
+                            <td class="p-4">신규 회원가입 (다운로드)</td>
+                            <td class="p-4">클릭률(CTR), 전환율(CVR), 고객 획득 비용(CAC)</td>
+                        </tr>
+                         <tr class="hover:bg-gray-50">
+                            <td class="p-4 font-bold text-pink-600">커뮤니티</td>
+                            <td class="p-4">블라인드, 에브리타임, 카페 등</td>
+                            <td class="p-4">초기 사용자 확보, 바이럴</td>
+                            <td class="p-4">언급량(Buzz), 가입 추천 링크 클릭 수</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center p-6">
+        <p>&copy; 2025 결하다(Gyeolhada) Project. All rights reserved.</p>
+        <p class="text-sm text-gray-400 mt-1">본 문서는 마케팅 전략 기획을 위한 내부 자료입니다.</p>
+    </footer>
+
+    <script>
+        // Lucide Icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
